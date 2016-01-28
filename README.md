@@ -1,6 +1,6 @@
 # Tips for OSX
 
-Some hints that I use everyday.
+Some OSX hints that I use everyday.
 
 ## screenshots
 
