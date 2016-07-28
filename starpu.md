@@ -38,21 +38,21 @@ Without ``--disable-build-doc``, the configure is OK but compiling the html doc 
 
 #### Option 2: using `clang`
 
-#### Option 2.1: with OpenMP support
+##### Option 2.1: with OpenMP support
 
 Install clang with homebrew (native clang provided by Apple is not enough)
 
 	brew install clang-omp
 
-##### Run the configure script:
+###### Run the configure script:
 
 	./configure --prefix=/opt/starpu --enable-opencl --enable-mpi-check \
 	--enable-opencl-check --disable-build-doc CPPFLAGS=-I/opt/X11/include/X11 \
 	LDFLAGS=-L/opt/X11/lib/ CC=/usr/local/bin/clang-omp CFLAGS=-std=gnu99
 
-#### Option 2.2: without OpenMP support
+##### Option 2.2: without OpenMP support
 
-##### Run the configure script:
+###### Run the configure script:
 
 	./configure --prefix=/opt/starpu --enable-opencl --enable-mpi-check \
 	--enable-opencl-check --disable-build-doc CPPFLAGS=-I/opt/X11/include/X11 \
