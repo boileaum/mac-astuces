@@ -2,14 +2,12 @@
 
 ## 1. Install the homebrew packages:
 
+	brew install pkg-config
 	brew install automake
 	brew install doxygen
 	brew install hwloc
-	
-If compiling with gcc:
-	
-	brew reinstall gcc --without-multilib
-	
+	brew install open-mpi
+
 ## 2. Install StarPU
 
 ### 2.1 Download
@@ -19,6 +17,10 @@ Last version tarball is downloadable at [http://starpu.gforge.inria.fr/files](ht
 ### 2.2 Compile
 
 #### Option 1: using `gcc-5`
+
+Install a version of gcc that supports OpenMP:
+
+	brew reinstall gcc --without-multilib
 
 ##### ``QMAKESPEC`` variable
 
