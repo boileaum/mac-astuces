@@ -71,3 +71,6 @@ Install clang with homebrew (native clang provided by Apple is not enough)
 
 	sudo make install
 	
+To link other applications with StarPU libraries, add the following line to your `~/.bashrc` file:
+
+	export PGK_CONFIG_PATH=/opt/starpu/lib/pkgconfig:$PGK_CONFIG_PATH
